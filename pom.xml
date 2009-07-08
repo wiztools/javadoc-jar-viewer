@@ -4,7 +4,7 @@
   <groupId>it.sella.ihateplanview</groupId>
   <artifactId>javadocjarviewer</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.0</version>
+  <version>0.2.0-SNAPSHOT</version>
   <name>javadocjarviewer</name>
   <url>http://maven.apache.org</url>
     <build>
