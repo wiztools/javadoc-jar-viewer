@@ -1,7 +1,9 @@
 package org.wiztools.util.javadocjarviewer;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
 
 /**
  *
@@ -44,23 +46,18 @@ public class Main {
             throw new IOException("File not available: "
                     + indexFile.getAbsolutePath());
         }
+        final URI indexFileUri = indexFile.toURI();
 
         // Give user feedback:
-        System.out.println("Opening: " + indexFile.toURI().toString());
-
-        // Get which browser to use:
-        String webBrowser = System.getProperty("web.browser");
-        if(webBrowser == null){
-            webBrowser = "firefox";
-        }
+        System.out.println("Opening: " + indexFileUri.toString());
 
         // Open default page in web browser:
-        try{
-            Runtime.getRuntime().exec(new String[]{webBrowser,
-                indexFile.toURI().toString()});
+        if(Desktop.isDesktopSupported()){
+            Desktop desktop = Desktop.getDesktop();
+            desktop.browse(indexFileUri);
         }
-        catch(IOException ex){
-            System.err.println("Error opening browser: " + webBrowser);
+        else{
+            System.err.println("Java platform does not support opening web-browser!");
             System.exit(2);
         }
     }
