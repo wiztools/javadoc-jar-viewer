@@ -4,13 +4,13 @@
     <groupId>org.wiztools.util</groupId>
     <artifactId>javadocjarviewer</artifactId>
     <packaging>jar</packaging>
-    <version>0.2.0</version>
+    <version>0.3.0-SNAPSHOT</version>
     <name>javadocjarviewer</name>
     <url>http://wiztools.googlecode.com/</url>
     <scm>
-        <connection>scm:svn:http://wiztools.googlecode.com/svn/javadocjarviewer/tags/javadocjarviewer-0.2.0</connection>
-        <developerConnection>scm:svn:https://wiztools.googlecode.com/svn/javadocjarviewer/tags/javadocjarviewer-0.2.0</developerConnection>
-        <url>scm:svn:https://wiztools.googlecode.com/svn/javadocjarviewer/tags/javadocjarviewer-0.2.0</url>
+        <connection>scm:svn:http://wiztools.googlecode.com/svn/javadocjarviewer/trunk/</connection>
+        <developerConnection>scm:svn:https://wiztools.googlecode.com/svn/javadocjarviewer/trunk/</developerConnection>
+        <url>http://code.google.com/p/wiztools/source/browse/</url>
     </scm>
     <build>
         <plugins>
