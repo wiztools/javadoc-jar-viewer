@@ -8,7 +8,7 @@ Many projects have started distributing their JavaDocs as a single Jar file. For
 
 To avoid these steps, we have the **JavaDoc Jar Viewer**. It does all the above. To execute it:
 
-    $ java -jar javadocjarviewer-NN.jar project-NN-javadoc.jar
+    $ java -jar javadoc-jar-viewer-NN.jar project-NN-javadoc.jar
 
 This will open the JavaDoc's index.html in your default browser.
 
